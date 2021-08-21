@@ -33,6 +33,8 @@ object ReadJsonTest {
 
     //读取json文件，生成DataFrame
     val df: DataFrame = sparkSession.read.json("H:\\input\\sparkInput\\input_json")
+    sparkSession.read.orc(" ")
+
 
     //打印表结构
     //    df.printSchema()

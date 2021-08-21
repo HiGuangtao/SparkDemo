@@ -44,8 +44,8 @@ object SecondarySort {
       val str: String = f.substring(1, f.length - 1)
       val strings: Array[String] = str.split(",")
       (new SecondarySortKey(strings(0), strings(1).toInt), f)
-
     })
+
     val arr: Array[(SecondarySortKey, String)] = rdd2.sortBy(_._1).collect()
 
     for (elem <- arr) {
